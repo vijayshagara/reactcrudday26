@@ -258,4 +258,11 @@ function App() {
 
 export default App;
 
-
+/* <button
+        className="icon"
+        onClick={() =>
+          window.open("https://www.linkedin.com/in/thiru-c-3085391a5/")
+        }
+      >
+        download
+      </button> */
