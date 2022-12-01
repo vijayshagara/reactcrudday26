@@ -44,7 +44,7 @@ function App() {
   useEffect(() => {
     async function getData() {
       const response = await axios.get(
-        "https://63209503e3bdd81d8efdb0f9.mockapi.io/uses"
+        "https://63209503e3bdd81d8efdb0f9.mockapi.io/vijayDemo"
       );
       setUserData(response.data);
       // console.log(userData);
@@ -92,7 +92,7 @@ function App() {
       // Updata
       if (formData.id) {
         const response = await axios.put(
-          `https://63209503e3bdd81d8efdb0f9.mockapi.io/uses/${formData.id}`,
+          `https://63209503e3bdd81d8efdb0f9.mockapi.io/vijayDemo/${formData.id}`,
           {
             name: formData.name,
             age: formData.age,
@@ -109,7 +109,7 @@ function App() {
       } else {
         // create
         const response = await axios.post(
-          "https://63209503e3bdd81d8efdb0f9.mockapi.io/uses",
+          "https://63209503e3bdd81d8efdb0f9.mockapi.io/vijayDemo",
           {
             name: formData.name,
             age: formData.age,
@@ -126,7 +126,7 @@ function App() {
   };
   const handleDelete = async (id) => {
     const response = await axios.delete(
-      `https://63209503e3bdd81d8efdb0f9.mockapi.io/uses/${id}`
+      `https://63209503e3bdd81d8efdb0f9.mockapi.io/vijayDemo/${id}`
     );
     // console.log(response);
     const user = userData.filter((row) => row.id !== response.data.id);
